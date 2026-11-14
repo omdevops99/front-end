@@ -36,7 +36,5 @@ unzip /tmp/frontend.zip &>>${log_file}
 status_check
 
 echo -e "${color} restart the nginx \e[0m"
-status_check
-
 systemctl restart nginx  &>>${log_file}
 status_check
