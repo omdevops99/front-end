@@ -48,7 +48,7 @@ cd /app  &>>${log_file}
 status_check
 
 echo -e "${color} unzip the file \e[0m"
-unzip /tmp/backend.zip &>>${log_file}
+unzip -o /tmp/backend.zip &>>${log_file}
 status_check
 
 echo -e "${color} npm nodejs dependency \e[0m"
